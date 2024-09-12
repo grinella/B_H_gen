@@ -1,4 +1,7 @@
 "use client";
+// kill -9 'numero pid'
+// lsof -i :3000 (3000 è il numero di porta)
+// npm run dev
 
 import React, { useState, useEffect } from 'react';
 
@@ -78,3 +81,38 @@ export default function Preview() {
     </div>
   );
 }
+
+// import React from 'react';
+// import jokes from '../data/jokes.json';
+
+// export default async function Preview() {
+//   const getRandomJoke = () => {
+//     const randomIndex = Math.floor(Math.random() * jokes.jokes.length);
+//     return jokes.jokes[randomIndex];
+//   };
+
+//   const initialJoke = getRandomJoke();
+
+//   return (
+//     <div className="flex flex-col items-center justify-start min-h-screen bg-purple p-4 relative">
+//       <h1 className="text-white text-3xl font-bold mt-8 mb-24">Don't be a bad person</h1>
+      
+//       <div className="flex-grow flex flex-col items-center justify-start pt-24">
+//         <p className="text-xl text-center max-w-md text-white h-32 overflow-hidden whitespace-pre-wrap">
+//           {initialJoke}
+//         </p>
+//       </div>
+      
+//       <div className="absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+//         <form action="/api/random-joke" method="GET">
+//           <button
+//             type="submit"
+//             className="px-6 py-3 text-lg font-bold text-white bg-red-950 rounded hover:bg-red-800 transition-colors transform scale-100 hover:scale-105"
+//           >
+//             Generate Black Humor Joke
+//           </button>
+//         </form>
+//       </div>
+//     </div>
+//   );
+// }
