@@ -24,7 +24,7 @@ export default function Preview() {
       const data = await response.json();
       setQuote(data.quote);
       setError(''); // Resetta l'errore se tutto va bene
-      setDisplayedQuote(''); // Reset displayed quote when fetching a new one
+      setDisplayedQuote(''); // Resetta la battuta visualizzata
     } catch (error) {
       console.error('Errore nel recupero della citazione:', error);
       setError('Errore nel recupero della citazione. Riprova.');
